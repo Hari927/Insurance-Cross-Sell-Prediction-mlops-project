@@ -20,7 +20,7 @@ To get started with the project, follow the steps below:
 ### 🔧 1. Clone the Repository
 Clone the project repository from GitHub:
 \`\`\`bash
-git clone https://github.com/prsdm/ml-project.git
+git clone https://github.com/Hari927/Insurance-Cross-Sell-Prediction-mlops-project.git
 cd ml-project
 \`\`\`
 
