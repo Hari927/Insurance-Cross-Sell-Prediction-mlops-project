@@ -1,6 +1,6 @@
 # Insurance Cross Sell Prediction 🏠🏥
 [![GitHub](https://img.shields.io/badge/GitHub-code-blue?style=flat&logo=github&logoColor=white&color=red)](https://github.com/Hari927/Insurance-Cross-Sell-Prediction-mlops-project)  
-[![Medium](https://img.shields.io/badge/Medium-view_article-green?style=flat&logo=medium&logoColor=white&color=green)](https://medium.com/@prasadmahamulkar/machine-learning-operations-mlops-for-beginners-a5686bfe02b2)
+
 
 Welcome to the **Insurance Cross-Selling Prediction** project!  
 This project aims to identify customers most likely to purchase additional insurance products using a machine learning pipeline and modern MLOps practices.
@@ -11,7 +11,8 @@ This project aims to identify customers most likely to purchase additional insur
 
 The diagram below represents the flow from data ingestion to model deployment and monitoring:
 
-![Image](docs/mlops.jpg)
+![image](https://github.com/user-attachments/assets/6a371204-abe4-4290-9637-f1f874406403)
+
 
 ---
 
