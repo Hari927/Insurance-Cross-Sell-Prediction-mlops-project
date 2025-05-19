@@ -1,93 +1,140 @@
 # Insurance Cross Sell Prediction 🏠🏥
-[![GitHub](https://img.shields.io/badge/GitHub-code-blue?style=flat&logo=github&logoColor=white&color=red)](https://github.com/prsdm/mlops-project) [![Medium](https://img.shields.io/badge/Medium-view_article-green?style=flat&logo=medium&logoColor=white&color=green)](https://medium.com/@prasadmahamulkar/machine-learning-operations-mlops-for-beginners-a5686bfe02b2)
+[![GitHub](https://img.shields.io/badge/GitHub-code-blue?style=flat&logo=github&logoColor=white&color=red)](https://github.com/Hari927/Insurance-Cross-Sell-Prediction-mlops-project)  
+[![Medium](https://img.shields.io/badge/Medium-view_article-green?style=flat&logo=medium&logoColor=white&color=green)](https://medium.com/@prasadmahamulkar/machine-learning-operations-mlops-for-beginners-a5686bfe02b2)
 
-Welcome to the Insurance Cross-Selling Prediction project! The goal of this project is to predict which customers are most likely to purchase additional insurance products using a machine learning model.
+Welcome to the **Insurance Cross-Selling Prediction** project!  
+This project aims to identify customers most likely to purchase additional insurance products using a machine learning pipeline and modern MLOps practices.
 
 ---
 
-## 📊 Diagram
-Below is the architecture diagram that illustrates the flow of the project from data ingestion to model deployment:
+## 📊 Architecture Diagram
+
+The diagram below represents the flow from data ingestion to model deployment and monitoring:
 
 ![Image](docs/mlops.jpg)
 
 ---
 
 ## 🚀 Get Started
-To get started with the project, follow the steps below:
+
+Follow these steps to set up and run the project locally:
 
 ---
 
 ### 🔧 1. Clone the Repository
-Clone the project repository from GitHub:
-\`\`\`bash
-git clone https://github.com/prsdm/ml-project.git
-cd ml-project
-\`\`\`
+
+```bash
+git clone https://github.com/Hari927/Insurance-Cross-Sell-Prediction-mlops-project.git
+cd Insurance-Cross-Sell-Prediction-mlops-project
+```
 
 ---
 
 ### 📦 2. Set Up the Environment
-Ensure you have Python 3.8+ installed. Create a virtual environment and install the necessary dependencies:
-\`\`\`bash
+
+Ensure Python 3.8+ is installed. Then run:
+
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-\`\`\`
+```
 
-Alternatively, use the Makefile command:
-\`\`\`bash
+Or use Makefile:
+
+```bash
 make setup
-\`\`\`
+```
 
 ---
 
 ### 📁 3. Data Preparation
-Pull the data using DVC. If DVC doesn't work, training and testing data should already be present in the \`data\` folder:
-\`\`\`bash
+
+If DVC is configured, pull the data:
+
+```bash
 dvc pull
-\`\`\`
+```
+
+> ✅ If DVC is not set up, data files should already exist in the `data/` folder.
 
 ---
 
 ### 🧠 4. Train the Model
-To train the machine learning model, execute:
-\`\`\`bash
+
+Run the training script:
+
+```bash
 python main.py
-\`\`\`
+```
 
 Or use:
-\`\`\`bash
-make run
-\`\`\`
 
-This script will load, preprocess, train, and save the model in the \`models/\` directory.
+```bash
+make run
+```
+
+The trained model will be saved in the `models/` directory.
 
 ---
 
 ### ⚙️ 5. Start FastAPI
-To run the FastAPI server:
-\`\`\`bash
+
+To serve the model using FastAPI:
+
+```bash
 uvicorn app:app --reload
-\`\`\`
+```
+
+Visit: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ---
 
 ### 🐳 6. Docker Deployment
-To build and deploy using Docker:
-\`\`\`bash
+
+Build and run using Docker:
+
+```bash
 docker build -t my_fastapi .
 docker run -p 80:80 my_fastapi
-\`\`\`
+```
 
-Once built, you can push the image to Docker Hub for cloud deployment.
+> ☁️ You can optionally push your image to Docker Hub for deployment.
 
 ---
 
 ### 📈 7. Monitor the Model
-Use Evidently AI to monitor model performance and data drift:
 
-\`\`\`bash
+Monitor model performance and data drift with **Evidently AI**:
+
+```bash
 jupyter notebook monitor.ipynb
-\`\`\`
+```
 
 ---
+
+## 🧰 Tech Stack
+
+- Python 3.8+
+- Scikit-learn
+- FastAPI
+- Docker
+- DVC
+- Evidently AI
+- Uvicorn
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👤 Contact
+
+Created by [**@Hari927**](https://github.com/Hari927) – feel free to connect or open issues!
+
+---
+
+⭐ Star this repo if you found it helpful!
